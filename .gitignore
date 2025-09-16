@@ -1,2 +1,4 @@
 # Ignore Jupyter checkpoints
 /.ipynb_checkpoints/
+/.idea/
+/.venv/
