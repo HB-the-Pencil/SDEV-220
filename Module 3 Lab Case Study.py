@@ -40,12 +40,22 @@ class Car(Vehicle):
         self.sunroof = sunroof
 
     def __str__(self):
+        """
+        Return a string representation of the car.
+
+        :return: Returns a string describing the car.
+        """
         info = (f"Model: {self.year} {self.make} {self.model}\n"
         f"{self.doors}-door car {'with' if self.sunroof else 'without'} "
         f"sunroof")
         return info
 
     def __repr__(self):
+        """
+        Produce the function call used to create the car.
+
+        :return: Returns a string that could be used to create the same car.
+        """
         string = (f"Car({self.year}, '{self.make}', '{self.model}', "
                   f"{self.doors}, {self.sunroof})")
         return string
